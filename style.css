@@ -1,0 +1,209 @@
+:root{
+    --bright-red: hsl(12, 88%, 59%);
+    --dark-blue: hsl(228, 39%, 23%);
+    --grey-blue:  hsl(227, 12%, 61%);
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: 42em -5em;
+    background-size: 45em;
+}
+/* section one styling */
+#section1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2.5em;
+}
+#section1 img{
+    width: 8em;
+    height:1.3em ;
+}
+.nav ul{
+    display: flex;
+    justify-content: center;
+}
+.nav ul li{
+    list-style-type: none;
+    margin: .4em;
+    font-size: .9em;
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+#section1 button{
+    background-color:var(--bright-red);
+    width: 9em;
+    padding: .8em;
+    border: none;
+    border-radius: 1.2rem;
+    color: white;
+    box-shadow:  0px 17px 10px -14px var(--bright-red);
+}
+
+/* section two styling */
+#section2{
+    display: flex;
+    padding: 8em;
+    justify-content: space-between;
+}
+#section2 h1{
+    font-size:35px ;
+    font-weight: 900;
+    line-height: 1.2em;
+    color: var(--dark-blue);
+}
+#section2 p{
+    font-size:.9em;
+    line-height: 1.5;
+    color: var(--grey-blue);
+}
+#section2 img{
+    width: 35em;
+    height: 30em;
+}
+#section2 button{
+    background-color:var(--bright-red);
+    width: 9em;
+    padding: .8em;
+    border: none;
+    border-radius: 1.2rem;
+    color: white;
+    margin-top: 1em;
+    box-shadow:  0px 17px 10px -14px var(--bright-red);
+}
+/* section three styling */
+
+#section3{
+    display: flex;
+    justify-content: space-between;
+    padding: 8em;
+    padding-top: 4em;
+}
+#section3 h4{
+    color: var(--dark-blue);    
+}
+#section3 h1{
+    font-size:30px ;
+    font-weight: 800;
+    line-height: 1.2em;
+    color: var(--dark-blue);    
+}
+#section3 .h1-p{
+    font-size:.9em;
+    line-height: 1.5;
+    color: var(--grey-blue);
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+#section3 p{
+    font-size:.9em;
+    line-height: 1.5;
+    color: var(--grey-blue);
+    margin-top: -.8em;
+    margin-bottom: 2em;
+}
+
+#section3 button{
+    background-color: var(--bright-red);
+    padding: .4em;
+    width: 4em;
+    height: 2.4em;
+    border: none;
+    border-radius: 1.2em;
+    color: white;
+    margin-left: -5.45em;
+    margin-right: .8em;
+}
+/* media queries */
+@media only screen and (max-width: 600px){
+    #section1{
+        padding-top: 1em;
+    }
+    #section1 img{
+        width: 5em;
+        height:1.1em ;
+        margin-left: 2em;
+        margin-top: -1.5em;
+    }
+    .nav ul{
+        margin-right: 3em;
+    }
+    .nav ul li{
+        font-size: .8em;
+    }
+    #section1 button{
+     display: none;
+    }
+    
+    /* section two styling */
+
+#section2{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 5em;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+#section2 p{
+    font-size:.9em;
+    line-height: 1.5;
+    color: var(--grey-blue);
+}
+#section2 img{
+    width: 20em;
+    height: 18em;
+    margin-left: -1em;
+}
+#section2 button{
+    margin-left: 2em;
+}
+/* section three styling */
+
+#section3{
+    display: flex;
+    flex-direction: column;
+    padding: 8em;
+    padding-top: 1em;
+}
+#section3 h4{
+    color: var(--dark-blue);    
+}
+#section3 h1{
+    font-size:30px ;
+    font-weight: 800;
+    line-height: 1.2em;
+    color: var(--dark-blue);    
+}
+#section3 .h1-p{
+    font-size:.9em;
+    line-height: 1.5;
+    color: var(--grey-blue);
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+#section3 p{
+    font-size:.9em;
+    line-height: 1.5;
+    color: var(--grey-blue);
+    margin-top: -.8em;
+    margin-bottom: 2em;
+}
+
+#section3 button{
+    background-color: var(--bright-red);
+    padding: .4em;
+    width: 4em;
+    height: 2.4em;
+    border: none;
+    border-radius: 1.2em;
+    color: white;
+    margin-left: -5.45em;
+    margin-right: .8em;
+}
+}
